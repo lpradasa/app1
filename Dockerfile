@@ -1,4 +1,4 @@
-FROM jboss/wildfly:10.1.0.Final
+FROM jboss/wildfly
 ADD HolaMundo.war /opt/jboss/wildfly/standalone/deployments/
 RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin#123 --silent
 EXPOSE 9990
